@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #d9dcd6;
+}
+
+/* Header section */
+
+/* ... (previous styles) ... */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #5594b4;
+    color: #ffffff;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    margin-left: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* ... (remaining styles) ... */
+
+
+/* ... (remaining styles) ... */
+
+.main-body {
+    padding: 20px;
+    position: relative; /* Make the main body a positioned container */
+}
+
+.linkedin-picture {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    border: 2px solid #5594b4;
+}
+
+.large-tile {
+    width: 100%; /* Take full width */
+    background-color: #ffffff00; /* Set the background color to white */
+    border: 0px solid #5594b4;
+    padding: 5px;
+    margin-top: 25px; /* Adjust as needed based on the space you want below the LinkedIn picture */
+    height: auto; /* Make the height flexible */
+}
+
+.tiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute items evenly */
+    margin-top: 2px;
+}
+/* ... (previous styles) ... */
+
+.tile {
+    position: relative;
+    width: calc(50% - 20px);
+    height: 150px; /* Adjust the height of the container */
+    border: 1px solid #ddd;
+    margin: 10px;
+    text-align: center;
+    box-sizing: border-box; /* Ensure padding and border don't affect the width and height */
+}
+
+.tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid #ddd; /* Add a border around the image */
+}
+
+.label {
+    position: absolute;
+    top: 15%; /* Adjust the top position as needed */
+    right: 15px; /* Adjust the left position as needed */
+    background-color: #1e4355; /* Set the background color of the label */
+    color: #ffffff; /* Set the text color of the label */
+    padding: 5px; /* Adjust the padding as needed */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+
+    font-family: 'Arial', sans-serif; /* Set the font family */
+    font-size: 20px; /* Set the font size */
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Set the font family for the entire page */
+}
+
+.text-under-tile {
+    font-size: 16px; /* Set the font size for the career information */
+}
+
+.text-under-tile h2 {
+    font-size: 24px; /* Set the font size for the section headings */
+    text-decoration: underline;
+}
+
+.text-under-tile h3 {
+    font-size: 20px; /* Set the font size for the subheadings */
+}
+
+.line {
+    width: 100%; /* Set the width to 100% to cover the full width */
+    border: 1px solid #ddd; /* Set the border style */
+    position: fixed; /* Fixed position at the bottom of the screen */
+    bottom: 0; /* Align the line to the bottom of the screen */
+    left: 0; /* Align the line to the left side of the screen */
+}
+
+
+/* Add responsiveness using media queries */
+@media only screen and (max-width: 600px) {
+    .line {
+        width: 90%; /* Adjust the width for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .line {
+        width: 95%; /* Further adjust the width for even smaller screens */
+    }
+}
+
+/* Add this to your existing CSS */
+.description-tile {
+    width: 75%; /* Adjust the width as needed */
+    height: 210px; /* Adjust the height as needed */
+    background-color: #ffffff7c; /* Set the background color to white */
+    border: 2px solid #5594b4; /* Set the border color */
+    padding: 2px; /* Adjust padding as needed */
+    margin-right: 10px; /* Add margin to separate from the LinkedIn picture */
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+
+.description-tile h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.description-tile p {
+    font-size: 16px;
+    color: #333333; /* Set text color */
+}
