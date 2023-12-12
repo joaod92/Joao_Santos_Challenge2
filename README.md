@@ -2,6 +2,8 @@
 
 My first webiste with all the learning thus far from the front-end web development bootcamp. This webpage reflect my CV, skills and workexperience all in one. 
 
+The website can be viewed here: https://joaod92.github.io/Joao_Santos_Challenge2/ 
+
 ## Installation
 No Installation required for this project. Please run the index.html file on your preffered browser of choice, in any device. 
 
